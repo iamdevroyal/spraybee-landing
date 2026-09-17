@@ -1,0 +1,93 @@
+.form {
+  display: flex;
+  gap: 10px;
+  max-width: 440px;
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 180px;
+  padding: 15px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: #fff;
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+.input::placeholder {
+  color: var(--color-text-faint);
+}
+
+.button {
+  padding: 15px 26px;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: var(--color-green);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-green-deep);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+@media (max-width: 480px) {
+  .form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input,
+  .button {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+}
+
+.successMessage {
+  font-size: 15px;
+  color: var(--color-green);
+  max-width: 400px;
+  font-weight: 600;
+}
+
+.successMessageDark {
+  color: var(--color-gold);
+}
+
+.errorMessage {
+  font-size: 13px;
+  color: var(--color-fuchsia);
+  width: 100%;
+}
+
+/* Dark variant: used on the closing CTA's dark section */
+.formDark .input {
+  background: var(--color-dark-surface);
+  border-color: var(--color-dark-border);
+  color: var(--color-dark-text);
+}
+
+.formDark .input::placeholder {
+  color: var(--color-dark-muted);
+}
+
+.formDark .button {
+  background: var(--color-gold);
+  color: #241a05;
+}
+
+.formDark .button:hover:not(:disabled) {
+  background: #e2b25e;
+}

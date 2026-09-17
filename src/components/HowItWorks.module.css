@@ -1,0 +1,121 @@
+.container {
+  width: 100%;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  position: relative;
+}
+
+.stepCard {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 10px 30px rgba(18, 33, 26, 0.04);
+}
+
+.stepCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(18, 33, 26, 0.09);
+  border-color: rgba(14, 107, 63, 0.3);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.numberBadge {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--color-fuchsia);
+  background: rgba(166, 41, 95, 0.08);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+}
+
+.stepTag {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.iconWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--color-green-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.highlightsList {
+  list-style: none;
+  margin: 0;
+  padding: 16px 0 0;
+  border-top: 1px dashed var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.checkIcon {
+  color: var(--color-green);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 960px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stepCard {
+    padding: 24px 20px;
+  }
+}

@@ -1,0 +1,162 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.card {
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 12px 32px rgba(18, 33, 26, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(18, 33, 26, 0.12);
+  border-color: rgba(14, 107, 63, 0.35);
+}
+
+.cardVenue {
+  border-top: 4px solid var(--color-green);
+}
+
+.cardRetail {
+  border-top: 4px solid var(--color-gold);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.badge {
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.badgeVenue {
+  background: var(--color-green-tint);
+  color: var(--color-green-deep);
+}
+
+.badgeRetail {
+  background: #fdf3dc;
+  color: var(--color-gold-deep);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.25;
+  margin-bottom: 14px;
+  color: var(--color-text);
+}
+
+.body {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.perksList {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.perkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14.5px;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.perkIcon {
+  color: var(--color-green);
+  font-weight: 800;
+  font-size: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 14.5px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.actionBtnVenue {
+  background: var(--color-green);
+  color: #ffffff;
+}
+
+.actionBtnVenue:hover {
+  background: var(--color-green-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(14, 107, 63, 0.25);
+}
+
+.actionBtnRetail {
+  background: var(--color-gold);
+  color: #241a05;
+}
+
+.actionBtnRetail:hover {
+  background: #e2b25e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(214, 162, 68, 0.3);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card {
+    padding: 28px 20px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}

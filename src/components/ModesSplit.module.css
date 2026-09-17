@@ -1,0 +1,206 @@
+.modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.card {
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease;
+  box-shadow: 0 16px 36px rgba(18, 33, 26, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(18, 33, 26, 0.16);
+}
+
+.cardSpray {
+  background: linear-gradient(145deg, #0a4a2c 0%, #0e6b3f 60%, #165b38 100%);
+  color: #f4f1e6;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.cardGift {
+  background: linear-gradient(145deg, #422e0e 0%, #8a611e 60%, #a67c2e 100%);
+  color: #fdfbf7;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.cardTop {
+  margin-bottom: 28px;
+}
+
+.tagsRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tagSpray {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.tagGift {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.badgePill {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cardTitle {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.cardBody {
+  font-size: 15.5px;
+  line-height: 1.6;
+  opacity: 0.92;
+  margin-bottom: 24px;
+}
+
+/* Feature checklist */
+.featureList {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+/* Interactive simulated mock UI inside cards */
+.mockPanel {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mockHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  opacity: 0.85;
+}
+
+.mockContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mockAlert {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.chipsRow {
+  display: flex;
+  gap: 6px;
+}
+
+.denomChip {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.giftToggleRow {
+  display: flex;
+  gap: 8px;
+}
+
+.toggleBtn {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  text-align: center;
+}
+
+.toggleKeep {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.toggleCash {
+  background: #d6a244;
+  color: #12211a;
+}
+
+@media (max-width: 900px) {
+  .modes {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card {
+    padding: 28px 22px;
+  }
+
+  .cardTitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mockContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

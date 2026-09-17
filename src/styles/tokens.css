@@ -1,0 +1,64 @@
+:root {
+  /* Core surfaces */
+  --color-bg: #fafaf7;
+  --color-surface: #f2f5f0;
+  --color-surface-alt: #eef1ea;
+  --color-border: #e3e0d3;
+
+  /* Text */
+  --color-text: #12211a;
+  --color-text-muted: #667066;
+  --color-text-faint: #98988a;
+
+  /* Brand */
+  --color-green: #0e6b3f;
+  --color-green-deep: #0a4a2c;
+  --color-green-tint: #e4efe7;
+  --color-gold: #d6a244;
+  --color-gold-deep: #8a611e;
+  --color-fuchsia: #a6295f;
+
+  /* One deliberately dark section (closing CTA + footer), echoing the
+     reference's single dark panel against an otherwise light page. */
+  --color-dark: #0f1511;
+  --color-dark-surface: #1a2119;
+  --color-dark-border: #2b3128;
+  --color-dark-text: #f4f1e6;
+  --color-dark-muted: #a9ab9d;
+
+  /* Legacy aliases so any not-yet-updated component still resolves */
+  --color-ink: var(--color-dark);
+  --color-ink-soft: var(--color-dark-surface);
+  --color-ink-border: var(--color-dark-border);
+  --color-paper: var(--color-surface);
+  --color-paper-border: var(--color-border);
+  --color-text-on-ink: var(--color-dark-text);
+  --color-text-on-ink-muted: var(--color-dark-muted);
+  --color-text-on-paper: var(--color-text);
+  --color-text-on-paper-muted: var(--color-text-muted);
+
+  /* Type */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing scale */
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 90px;
+  --space-9: 100px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --content-max-width: 1180px;
+  --header-height: 84px;
+}
