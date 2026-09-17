@@ -1,0 +1,47 @@
+# robots.txt for SprayBee (https://spraybee.app)
+# Comprehensive crawler directives for traditional and AI search engines
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /scratch/
+
+# AI Search Engines & Conversational Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Traditional Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemaps & LLM Context References
+Sitemap: https://spraybee.app/sitemap.xml
+# LLM Knowledge Resource: https://spraybee.app/llms.txt

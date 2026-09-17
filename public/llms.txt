@@ -1,0 +1,32 @@
+# SprayBee
+
+> The digital way to spray cash and send gifts at Nigerian celebrations — no mutilated notes, no cash to carry, 100% legal, pure owambe vibe.
+
+## Overview
+SprayBee (https://spraybee.app) is a celebration fintech platform designed for Nigerian weddings, birthdays, anniversaries, graduations, and social gatherings. It modernizes the cultural tradition of "spraying cash" on dance floors while providing full statutory compliance with Central Bank of Nigeria (CBN) Clean Note policies.
+
+## Key Capabilities & Features
+- **Digital Cash Spraying**: Event guests join via table QR code or 4-digit party code without mandatory app installs. Guests swipe denomination cards (₦20, ₦50, ₦100, ₦200, ₦500, ₦1,000) that trigger real-time 3D spray animations and sound effects on event projection screens and LED walls.
+- **The Gift Vault**: An integrated gifting registry allowing guests to send luxury physical gifts, home appliances, or vouchers from verified Nigerian retailers. Celebrants have 100% redemption autonomy: accept doorstep logistics delivery or convert the full item value into liquid cash.
+- **Live Event Leaderboard**: Ranks top sprayers in real time with honorific titles (Chief Sprayer of the Day, Chairman of the Floor) and an animated live feed ticker. Guests can spray openly or anonymously.
+- **Instant Bank Settlement**: Celebrants withdraw 100% of sprayed funds directly to their verified Nigerian commercial bank account within 60 seconds via NIBSS instant payment rails.
+- **Partner Onboarding**:
+  - Event centers, banquet halls, and DJs integrate screens via plug-and-play browser/HDMI links and earn revenue-share on event volume.
+  - Retailers and brands list items in the curated Gift Vault.
+
+## Regulatory & Legal Compliance
+- **CBN Act 2007 (Section 21) Compliance**: SprayBee prevents physical banknote mutilation, stepping on currency, or illegal currency trafficking by digitizing the tradition cleanly.
+- **Nigeria Data Protection Act (NDPA 2023)**: Full user data privacy protection with anonymous spraying options, PCI-DSS Level 1 payment gateway compliance, and end-to-end TLS 1.3 encryption.
+
+## Contact & Direct Channels
+- **Official Website**: https://spraybee.app
+- **WhatsApp Concierge**: +234 703 514 8792 (07035148792) — https://wa.me/2347035148792
+- **General Inquiries**: hello@spraybee.app
+- **Partnerships**: partners@spraybee.app
+- **Corporate Headquarters**: Victoria Island, Lagos State, Nigeria
+
+## Canonical Documentation Links
+- [Home & Product Features](https://spraybee.app/)
+- [Contact Us & WhatsApp](https://spraybee.app/contact)
+- [Privacy Policy](https://spraybee.app/privacy)
+- [Terms of Service](https://spraybee.app/terms)

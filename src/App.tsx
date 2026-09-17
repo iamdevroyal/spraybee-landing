@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
 import { useRoute } from './router'
+import { usePageSEO } from './seo'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import ContextStrip from './components/ContextStrip'
@@ -18,17 +18,8 @@ import ContactUs from './pages/ContactUs'
 function App() {
   const route = useRoute()
 
-  useEffect(() => {
-    if (route === 'privacy') {
-      document.title = 'Privacy Policy — SprayBee'
-    } else if (route === 'terms') {
-      document.title = 'Terms of Service — SprayBee'
-    } else if (route === 'contact') {
-      document.title = 'Contact Us — SprayBee'
-    } else {
-      document.title = 'SprayBee — Spray the moment. Gift the memory.'
-    }
-  }, [route])
+  // Dynamically updates Title, Meta Description, Canonical, OG, and Twitter tags
+  usePageSEO(route)
 
   if (route === 'privacy') {
     return <PrivacyPolicy />
