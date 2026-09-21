@@ -20,7 +20,7 @@ const partnerTracks: PartnerTrack[] = [
   {
     type: 'venue',
     icon: '🏛️',
-    badge: 'Venue Partnership',
+    badge: 'Event Venue Partnership',
     title: 'Transform Your Screens Into High-Energy Live Arenas',
     description:
       'Put the live spray feed and real-time leaderboards on your LED walls, TV screens, and projectors. Guests scan a QR code at their table to join instantly, turning every banquet hall into an electric owambe spectacle.',
@@ -29,7 +29,7 @@ const partnerTracks: PartnerTrack[] = [
       'Earn exclusive partner revenue-share on every spray event hosted at your hall',
       'Keep celebrants and guests dancing longer with automated visual leaderboards',
     ],
-    btnText: 'Onboard as Event Center 🏛️',
+    btnText: 'Onboard as Event Center',
     cardClass: styles.cardVenue,
     badgeClass: styles.badgeVenue,
     btnClass: styles.actionBtnVenue,
@@ -37,7 +37,7 @@ const partnerTracks: PartnerTrack[] = [
   {
     type: 'retail',
     icon: '🛍️',
-    badge: 'Retail & Gift Network',
+    badge: 'Retail & Gift Stores',
     title: 'Place Your Products Directly on Nigerian Wishlists',
     description:
       'Feature your luxury goods, electronics, perfumes, home appliances, and gift hampers inside the SprayBee Gift Vault. Guests purchase directly from your verified catalog for couples and birthday celebrants across Nigeria.',
@@ -46,7 +46,7 @@ const partnerTracks: PartnerTrack[] = [
       'Guaranteed direct merchant payouts the moment items are gifted or redeemed',
       'Seamless white-glove logistics integration for swift doorstep deliveries',
     ],
-    btnText: 'Onboard as Retail Partner 🛍️',
+    btnText: 'Onboard as Retail Partner',
     cardClass: styles.cardRetail,
     badgeClass: styles.badgeRetail,
     btnClass: styles.actionBtnRetail,
@@ -78,9 +78,6 @@ function PartnersSection() {
             <div className={`${styles.card} ${partner.cardClass}`} key={partner.title}>
               <div>
                 <div className={styles.cardHeader}>
-                  <div className={styles.iconWrap} aria-hidden="true">
-                    {partner.icon}
-                  </div>
                   <span className={`${styles.badge} ${partner.badgeClass}`}>{partner.badge}</span>
                 </div>
                 <h3 className={styles.title}>{partner.title}</h3>

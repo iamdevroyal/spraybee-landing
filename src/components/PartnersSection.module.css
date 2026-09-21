@@ -136,14 +136,14 @@
 }
 
 .actionBtnRetail {
-  background: var(--color-gold);
-  color: #241a05;
+  background: var(--color-green);
+  color: #cfcdc8;
 }
 
 .actionBtnRetail:hover {
-  background: #e2b25e;
+  background: var(--color-green-deep);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(214, 162, 68, 0.3);
+  box-shadow: 0 8px 20px rgba(2, 90, 91, 0.3);
 }
 
 @media (max-width: 900px) {

@@ -18,7 +18,7 @@ const steps: StepDetail[] = [
     title: 'Scan & Enter the Vibe',
     description:
       'Scan the event QR code on the table or screen, or type the 4-character party code. No mandatory app downloads, no KYC hurdles—just your phone number and you are inside in 5 seconds.',
-    highlights: ['Zero app install required', 'Instant phone verification', 'Direct party wallet top-up'],
+    highlights: ['Instant phone verification', 'Direct party wallet top-up'],
   },
   {
     number: '02',
@@ -27,7 +27,7 @@ const steps: StepDetail[] = [
     title: 'Swipe to Spray or Gift',
     description:
       'Swipe crisp digital Naira notes (₦20 to ₦1,000) that fly with authentic haptic motion and erupt onto the venue’s live projection screens, or pick registry gifts from Nigeria’s top lifestyle brands.',
-    highlights: ['Real-time big-screen sync', '3D denomination fanning', 'Curated wish list gifting'],
+    highlights: ['Real-time big-screen sync', 'Curated wish list gifting'],
   },
   {
     number: '03',
@@ -36,7 +36,7 @@ const steps: StepDetail[] = [
     title: 'Direct Payout & Zero Wahala',
     description:
       'The celebrant withdraws 100% of sprayed cash directly to their verified Nigerian bank account within 60 seconds. Redeem physical gifts or convert them to cash with a single tap.',
-    highlights: ['60-second direct bank payout', '0% currency mutilation', '100% CBN clean-note compliant'],
+    highlights: ['0% currency mutilation', '100% CBN clean-note compliant'],
   },
 ]
 
@@ -62,9 +62,6 @@ function HowItWorks() {
               <div className={styles.headerRow}>
                 <span className={styles.numberBadge}>{step.number}</span>
                 <span className={styles.stepTag}>{step.tag}</span>
-              </div>
-              <div className={styles.iconWrap} aria-hidden="true">
-                {step.icon}
               </div>
               <h3 className={styles.title}>{step.title}</h3>
               <p className={styles.description}>{step.description}</p>

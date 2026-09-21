@@ -10,7 +10,7 @@ function ModesSplit() {
     <section className="section section--surface" id="modes">
       <div className="wrap">
         <div className="sectionHead">
-          <h2>Two modes. One wallet. Maximum celebration.</h2>
+          <h2>Two modes. One wallet.</h2>
           <p>
             Whether you are tearing up the dance floor with crisp digital Naira or sending a
             thoughtful keepsake from the registry, SprayBee keeps the vibe unforgettable.
