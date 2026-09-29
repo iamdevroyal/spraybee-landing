@@ -6,7 +6,7 @@ function ContextStrip() {
       <div className="wrap">
         <p>
           Built for a country moving past mutilated notes —{' '}
-          <strong>every spray lands clean, every naira counted.</strong>
+          <strong>and for friends and family in the diaspora who wants in on the vibes too.</strong>
         </p>
       </div>
     </div>
