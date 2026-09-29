@@ -12,8 +12,7 @@ function Hero() {
           Gift the memory.
         </h1>
         <p className={styles.subcopy}>
-          The digital way to spray cash and send gifts at Nigerian celebrations — no mutilated
-          notes, no cash to carry, just the vibe.
+          Bringing the joy of cash spraying and gifting into the digital age — for celebrations at home and around the world.
         </p>
         <WaitlistForm />
       </div>
